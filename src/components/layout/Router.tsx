@@ -1,7 +1,7 @@
 import { Outlet, createBrowserRouter } from "react-router";
-import SignUpPage from "../../pages/auth/SignUpPage";
-import SignInPage from "../../pages/auth/SignInPage";
-import Navbar from "./navbar/Navbar";
+import SignUpPage from "../../pages/auth/sign-up/SignUpPage";
+import SignInPage from "../../pages/auth/sign-in/SignInPage";
+import Navbar from "../navbar/Navbar";
 
 const WithNavbar = () => {
     return (
@@ -18,7 +18,7 @@ const WithNavbar = () => {
  * 
  */
 
-export const Router = createBrowserRouter(
+export const ROUTER = createBrowserRouter(
     [
         {
             path: "/sign-up",
